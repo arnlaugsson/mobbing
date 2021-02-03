@@ -8,7 +8,11 @@
   "private": false,
   "main": "server.js",
   "scripts": {
+    "build": "webpack",
     "start": "node server",
+    "dev-api": "nodemon",
+    "dev-client": "webpack serve",
+    "dev": "concurrently --kill-others \"yarn run dev-api\" \"yarn run dev-client\"",
     "test": "jest",
     "watch": "jest --watchAll"
   },
@@ -17,7 +21,14 @@
     "path": "^0.12.7"
   },
   "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "concurrently": "^5.3.0",
+    "html-webpack-plugin": "^5.0.0",
     "jest": "^26.6.3",
-    "supertest": "^6.1.3"
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.3",
+    "webpack": "^5.20.1",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
   }
 }
