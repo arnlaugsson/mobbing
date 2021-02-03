@@ -1,0 +1,23 @@
+{
+  "name": "mobbing",
+  "version": "1.0.0",
+  "description": "A mobbing demo repo for Valka workday",
+  "repository": "git@github.com:arnlaugsson/mobbing.git",
+  "author": "Skúli Arnlaugsson <skuli@hey.com>",
+  "license": "MIT",
+  "private": false,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "test": "jest",
+    "watch": "jest --watchAll"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "supertest": "^6.1.3"
+  }
+}
