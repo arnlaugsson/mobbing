@@ -1,11 +1,14 @@
-
 const express = require("express");
 const router = express.Router();
 const calculate = require("../calculator/index");
 
 router.get("/calculate/:formula", (req, res) => {
-  let val = calculate(req.params["formula"]);
-  res.status(200).send({calculated: val})
+  try {
+    let val = calculate(req.params["formula"]);
+    res.status(200).send({ calculated: val });
+  } catch (error) {
+    res.status(400).send({ calculated: "Invalid Input" });
+  }
 });
 
 router.get("/", (req, res) => {

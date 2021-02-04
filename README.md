@@ -2,6 +2,16 @@
 
 A simple boiler-plate code to get us mobbing!
 
+## Contributors
+
+- Friðrik Runólfsson
+- Martin Frewer
+- Skabbi Thordar
+- Skúli Arnlaugsson
+- Tómas Guðmundsson
+- Tómas Jónasson
+- Valgeir Björnsson
+
 ## Getting started
 
 1. Run 'yarn' to install all required dependencies.
@@ -15,9 +25,9 @@ A simple boiler-plate code to get us mobbing!
 ## Tasks
 
 1. Add error handling to the client, so the page is update when an invalid formula is entered.
-    - Example invalid input: "@tHiS w0n't work".
-    - It should update the output box saying the input is not valid.
-    - - It should make the output box red to indicate an error.
+   - Example invalid input: "@tHiS w0n't work".
+   - It should update the output box saying the input is not valid.
+   - - It should make the output box red to indicate an error.
 2. Add support for the exponatiation character "^".
 3. Improve the styling, surprise us!
 
@@ -26,7 +36,7 @@ A simple boiler-plate code to get us mobbing!
 ### Prepare
 
 1. One person from the teams forks this repo. And invites the other members to join that repo.
-2. Every team member install https://github.com/remotemobprogramming/mob and clones the forked repo to their machine
+2. Every team member install <https://github.com/remotemobprogramming/mob> and clones the forked repo to their machine
 3. Familiarize yourselves as a team with the repo.
 4. The team pick a tasks and decides who will be the first driver, and decides how frequently we want to swithc drivers (5 min recommended).
 5. That person shares their screen in a video conferencing software (Teams or Google meet for a lighter experience).

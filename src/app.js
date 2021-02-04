@@ -7,10 +7,9 @@ const api = require("./api/index");
 app.use(express.static(path.join(__dirname, "../", "dist")));
 app.use("/api", api);
 
-
 // Catch other requests
 app.get("*", (req, res) => {
-    res.status(404).send({error: "Not found"});
+  res.status(404).send({ error: "Not found" });
 });
 
 // Prettify the JSON response

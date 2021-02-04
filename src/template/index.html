@@ -1,61 +1,67 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-  <style>
-    .card {
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0, 0.2);
-      border: 1px solid black;
-      transition: 0.3s;
-      width: 250px;
-      margin-bottom: 16px;
-    }
-    .card:hover {
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    }
-    .container {
-      padding: 16px;
-    }
-  </style>
+<style>
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0, 0.2);
+    border: 1px solid black;
+    transition: 0.3s;
+    width: 250px;
+    margin-bottom: 16px;
+  }
 
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Valka mobbing exercise</title>
-    <meta name="description" content="" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
 
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="apple-touch-icon" href="icon.png" />
-  </head>
+  .container {
+    padding: 16px;
+  }
 
-  <body>
-    <!--[if lte IE 9]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
-        your experience and security.
-      </p>
-    <![endif]-->
+  .error {
+    background-color: tomato;
+    color: white;
+    font-weight: 700;
+  }
+</style>
 
-    <h1>Valka calculator</h1>
-    <div class="card">
-      <div class="container">
-        <h2>Input</h2>
-        <form id="calculateForm">
-          <label for="formula">What do you need to calculate?</label>
-          <br />
-          <input type="text" id="formula" name="formula" />
-          <button type="submit">Submit</button>
-        </form>
-      </div>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Valka mobbing exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="apple-touch-icon" href="icon.png" />
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+ <p class="browserupgrade">
+ You are using an <strong>outdated</strong> browser. Please
+ <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+ your experience and security.
+ </p>
+ <![endif]-->
+
+  <h1>Valka calculator</h1>
+  <div class="card">
+    <div class="container">
+      <h2>Input</h2>
+      <form id="calculateForm">
+        <label for="formula">What do you need to calculate?</label>
+        <br />
+        <input type="text" id="formula" name="formula" />
+        <button type="submit">Submit</button>
+      </form>
     </div>
-    <div class="card">
-      <div class="container">
-        <h2>Outut</h2>
-        <div id="calculated">Waiting for a formula...</div>
-      </div>
+  </div>
+  <div id="output-box" class="card">
+    <div class="container">
+      <h2>Output</h2>
+      <div id="calculated">Waiting for a formula...</div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

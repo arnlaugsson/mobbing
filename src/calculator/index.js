@@ -1,5 +1,6 @@
 function evil(fn) {
-    return new Function('return ' + fn)();
+  const val = new Function("return " + fn)();
+  return val;
 }
 
 module.exports = evil;
