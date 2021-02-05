@@ -36,17 +36,18 @@ A simple boiler-plate code to get us mobbing!
     - Open README.md in your favourite editor, add your name to the Contributor's list.
     - Save the file and type `mob next`
     - All of your changes should be saved and pushed to the new branch, and the next person can proceed until everyone has added there name.
-    - If not, you'll need to fix your SSH key,or https authentication to the repo.
-        - Have you accepted the invite to the Github project?
-        - Are you using the correct SSH key?
+        - If not, you'll need to fix your SSH key,or https authentication to the repo.
+            - Have you accepted the invite to the Github project?
+            - Are you using the correct SSH key?
+    - Once the last person on the team has added their name, simply type `mob next` and you are ready to move on to the next step.
 5. The team pick a tasks and decides who will be the first driver, and decides how frequently we want to swithc drivers (5 min recommended).
 6. That person shares their screen in a video conferencing software (Teams or Google meet for a lighter experience).
 
 ### Start mobbing
 
-1. Once everyone is ready, the first driver types: "mob start 5 -r".
+1. Once everyone is ready, the first driver types: `mob start 5 -r`.
 2. Start thinking out loud, and coding. The other team members are navigators, and should try to keep an eye on the big picture and what's happening. Discuss, think, disagree, and decide.
-3. Once the time is up for the first driver, type mob next. The next team member types "start mob 5 -r", and so it continues. Until the feature is complete or the time is up.
+3. Once the time is up for the first driver, type `mob next`. The next team member types `start mob 5 -r`, and so it continues. Until the feature is complete or the time is up. After this type `mob done` and follow the instructions in the Mobbing tool for finishing up your changes.
 
 ### When the time is up
 
